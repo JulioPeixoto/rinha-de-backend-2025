@@ -8,13 +8,6 @@
 - **Docker** - Containerização
 - **Uvicorn + Uvloop** - Servidor ASGI de alta performance
 
-## Estratégia
-
-- Load balancer Nginx com 2 instâncias FastAPI
-- Fallback automático entre processadores default/fallback
-- Cache Redis para consistência de dados
-- Timeouts otimizados para reduzir latência
-
 ## Recursos
 
 - **CPU**: 1.5 total (0.15 nginx + 0.60 api1 + 0.60 api2 + 0.15 redis)
